@@ -1,4 +1,4 @@
-# Book Search Engine Starter Code
+# Book Search Engine
 
 ## Table of Contents
 
@@ -8,49 +8,37 @@
 - [Usage](#usage)
 - [License](#license)
 - [Contribution](#contribution)
-- [Test Instructions](#test-instructions)
 - [Questions](#questions)
 
 ## Description:
 
-This is a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package.
+This application allows users to search for new books from Google's Book API. Users can log in to save the book they would like to purchase, as well as to remove the books from their library.
 
 ## Technology:
 
 Project is created with:
-
-- Javascript
+- MongoDB
+- Express.js
+- React.js
 - Node.js
-- Inquirer.js
+- JavaScript
+- GraphQL API
+- Apollo Server
 
 ## Installation
 
 To run this project, install it locally using npm:
 
-- In server directory:
-
 ```
-npm i
-npm run seed
-npm i apollo-server-express graphql
-npm run watch
-```
-
-- At the root of the application
-
-```
-npm init -y
+npm install
 ```
 
 ## Usage
 
-After installing npm packages, the application will be invoked by using the following command: `node index.js`.
+After installing npm packages, the application will be invoked by using the following command: `npm start`.
 
-#### Walkthrough Video
 
-[Click me to see the demo video!](https://www.awesomescreenshot.com/video/7015399?key=3428a892b1ac4c806df108fb1bf83f03)
-
-#### Example Screenshot
+#### App Screenshot
 
 ![Screenshot](/assets/images/ET-1.png)
 ![Screenshot](/assets/images/ET-2.png)
@@ -65,10 +53,6 @@ This project is licensed under MIT, for more information please visit [this webs
 
 Made by Wenwen Tian
 
-## Test Instructions
-
-To run tests for this application, you can run the following command:
-`npm run test`
 
 ## Questions?
 
