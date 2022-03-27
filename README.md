@@ -35,7 +35,7 @@ npm install
 
 ## Usage
 
-After installing npm packages, the application will be invoked by using the following command: `npm start`.
+After installing npm packages, the application will be invoked by using the following command: `npm run develop`.
 
 
 #### App Screenshot
