@@ -17,6 +17,7 @@ This application allows users to search for new books from Google's Book API. Us
 ## Technology:
 
 Project is created with:
+
 - MongoDB
 - Express.js
 - React.js
@@ -35,14 +36,19 @@ npm install
 
 ## Usage
 
-After installing npm packages, the application will be invoked by using the following command: `npm run develop`.
+After installing npm packages, the application will be invoked by using the following command:
 
+```
+npm run develop
+```
+
+#### Heroku Deployment
+
+[Click me to see app!](https://joce1ynn.github.io/portfolio-React/)
 
 #### App Screenshot
 
-![Screenshot](/assets/images/ET-1.png)
-![Screenshot](/assets/images/ET-2.png)
-![Screenshot](/assets/images/ET-3.png)
+![Screenshot](/client/public/GBS.png)
 
 ## License
 
@@ -53,11 +59,9 @@ This project is licensed under MIT, for more information please visit [this webs
 
 Made by Wenwen Tian
 
-
 ## Questions?
 
 Please feel free to contact me if you need any further information:
 
 - [Email](wwtian9@gmail.com)
 - [Github Profile](https://github.com/joce1ynn)
-
