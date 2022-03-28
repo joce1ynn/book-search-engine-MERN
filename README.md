@@ -44,7 +44,7 @@ npm run develop
 
 #### Heroku Deployment
 
-[Click me to see app!](https://joce1ynn.github.io/portfolio-React/)
+[Click me to see app!](https://book-search-engine-2022.herokuapp.com/)
 
 - Create heroku app
 
