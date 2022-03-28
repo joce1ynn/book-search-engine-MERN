@@ -13,7 +13,7 @@ import { GET_ME } from "../utils/queries";
 import { REMOVE_BOOK } from "../utils/mutations";
 
 import Auth from "../utils/auth";
-import { removeBookId, saveBookIds } from "../utils/localStorage";
+import { removeBookId } from "../utils/localStorage";
 
 const SavedBooks = () => {
   // use the useQuery() Hook to execute the GET_ME query
@@ -27,10 +27,11 @@ const SavedBooks = () => {
   const handleDeleteBook = async (bookId) => {
     const token = Auth.loggedIn() ? Auth.getToken() : null;
 
-    // use removeBook function
     if (!token) {
       return false;
     }
+
+    // use removeBook function
     try {
       const response = await removeBook({
         variables: { bookId: bookId },
@@ -51,10 +52,6 @@ const SavedBooks = () => {
   if (!loading) {
     return <h2>LOADING...</h2>;
   }
-
-  // get info from localStorage by the use data queries
-  const savedBookIds = userData.savedBooks.map((book) => book.bookId);
-  saveBookIds(savedBookIds);
 
   return (
     <>
