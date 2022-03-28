@@ -46,6 +46,30 @@ npm run develop
 
 [Click me to see app!](https://joce1ynn.github.io/portfolio-React/)
 
+- Create heroku app
+
+  ```
+  heroku create
+  ```
+
+- Create database on MongoDB Atlas:
+
+  ```
+  Cluster ➡️ Collections ➡️ Create Database
+  ```
+
+- Change Heroku setting
+
+  ```
+  Config Vars ➡️ KEY: MONGODB_URI ➡️ VALUE: (from Cluster connect, change password and database name)
+  ```
+
+- Git push
+  ```
+  git push heroku main
+  heroku open
+  ```
+
 #### App Screenshot
 
 ![Screenshot](/client/public/GBS.png)
