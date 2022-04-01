@@ -15,6 +15,7 @@ import { useQuery, useMutation } from "@apollo/react-hooks";
 const SavedBooks = () => {
   const { loading, data } = useQuery(GET_ME);
   let userData = data?.me || {};
+  console.log(userData);
   const [removeBook] = useMutation(REMOVE_BOOK);
 
   // function that accepts the book's mongo _id value as param and deletes the book from the database
@@ -28,7 +29,7 @@ const SavedBooks = () => {
     try {
       const { user } = await removeBook({
         variables: {
-          bookId,
+          bookId: bookId,
         },
       });
 
