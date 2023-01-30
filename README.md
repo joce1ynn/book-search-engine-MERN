@@ -44,7 +44,7 @@ npm run develop
 
 #### Heroku Deployment
 
-[Click me to see app!](https://book-search-engine-2022.herokuapp.com/)
+[Click me to see app!](https://book-search-mern.onrender.com/)
 
 - Create heroku app
 
@@ -72,7 +72,7 @@ npm run develop
 
 #### App Screenshot
 
-![Screenshot](/client/public/GBS.png)
+![Screenshot](./client/public/GBS.png)
 
 ## License
 
