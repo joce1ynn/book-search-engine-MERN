@@ -1,5 +1,5 @@
 // see SignupForm.js for comments
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 
 // import useMutation and LOGIN-USER
@@ -15,6 +15,12 @@ const LoginForm = () => {
 
   // declaring loginUser with useMutation
   const [loginUser, { error }] = useMutation(LOGIN_USER);
+
+  useEffect(() => {
+    if (error) setShowAlert(true);
+    else setShowAlert(false);
+  }, [error])
+
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -40,7 +46,6 @@ const LoginForm = () => {
       Auth.login(data.login.token);
     } catch (e) {
       console.error(e);
-      setShowAlert(true);
     }
 
     setUserFormData({
